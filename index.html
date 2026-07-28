@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto de Grado II · Ingeniería Industrial Uniandes</title>
+<meta name="description" content="Guía interactiva para el proceso de Proyecto de Grado II — IIND-3001, Ingeniería Industrial, Universidad de los Andes.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">PG</span>
+        <span class="brand-text">
+          <strong>Proyecto de Grado II</strong>
+          <em>IIND-3001 · Ingeniería Industrial</em>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 14.2A8.4 8.4 0 1 1 9.8 4a6.7 6.7 0 0 0 10.2 10.2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Semestre 2026-10</p>
+        <h1 class="hero-title">Proyecto de&nbsp;Grado&nbsp;II</h1>
+        <p class="hero-subtitle">Todo lo que necesitas para completar tu proceso de grado, en un solo lugar. Sin PDFs, sin vueltas.</p>
+
+        <form class="search-bar" id="searchForm" role="search">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.2-3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="text" id="searchInput" placeholder="Busca tu duda: “pendiente”, “jurado”, “biblioteca”…" autocomplete="off">
+          <kbd class="search-kbd">/</kbd>
+        </form>
+        <div class="search-results" id="searchResults" hidden></div>
+      </div>
+    </section>
+
+    <!-- ============ RUTA / TIMELINE (elemento signature) ============ -->
+    <section class="route" aria-labelledby="routeHeading">
+      <div class="route-inner">
+        <div class="route-head">
+          <h2 id="routeHeading">Tu ruta este semestre</h2>
+          <p id="routeStatus">Calculando tu momento en el proceso…</p>
+        </div>
+
+        <ol class="route-rail" id="routeRail">
+          <!-- generado por JS a partir de js/data.js -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TARJETAS PRINCIPALES ============ -->
+    <section class="cards" aria-labelledby="cardsHeading">
+      <div class="cards-inner">
+        <h2 id="cardsHeading" class="visually-hidden">Secciones del proceso</h2>
+        <div class="card-grid" id="cardGrid">
+          <!-- generado por JS a partir de js/data.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <strong>¿Dudas?</strong>
+        <a href="mailto:l.varelac@uniandes.edu.co">l.varelac@uniandes.edu.co</a>
+        <a href="mailto:sc.chaparrom@uniandes.edu.co">sc.chaparrom@uniandes.edu.co</a>
+        <span>Ext. 3861</span>
+      </div>
+      <div class="footer-col footer-col-right">
+        <a class="footer-cta" href="#" id="feedbackLink">Califica tu experiencia →</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Volver al inicio" hidden>
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 14l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
